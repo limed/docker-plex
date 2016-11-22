@@ -2,14 +2,17 @@
 FROM limed/ubuntu-base
 MAINTAINER limed@sudoers.org
 
+# Handy information regarding package
 ENV PLEX_VERSION 1.2.7.2987-1bef33a
 ENV PLEX_FILE plexmediaserver_${PLEX_VERSION}_amd64.deb
 ENV PLEX_URL https://downloads.plex.tv/plex-media-server/${PLEX_VERSION}/${PLEX_FILE}
 
+# Location of directories and misc
 ENV PLEX_MEDIA_SERVER_APPLICATION_SUPPORT_DIR "/var/lib/plexmediaserver/Library/Application Support"
 ENV PLEX_MEDIA_SERVER_HOME /usr/lib/plexmediaserver
 ENV PLEX_MEDIA_SERVER_MAX_PLUGIN_PROCS 6
 
+# Where are you storing your data
 ENV MEDIA_DIR /data
 
 RUN set -xe \
