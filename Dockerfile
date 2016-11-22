@@ -36,3 +36,5 @@ EXPOSE 1900/udp \
        32413/udp \
        32414/udp \
        32469/tcp
+
+ADD files/start.sh /start.sh
