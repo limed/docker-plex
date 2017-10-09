@@ -3,7 +3,7 @@ FROM limed/ubuntu-base
 MAINTAINER limed@sudoers.org
 
 # Handy information regarding package
-ENV PLEX_VERSION 1.2.7.2987-1bef33a
+ENV PLEX_VERSION 1.9.2.4285-9f65b88ae
 ENV PLEX_FILE plexmediaserver_${PLEX_VERSION}_amd64.deb
 ENV PLEX_URL https://downloads.plex.tv/plex-media-server/${PLEX_VERSION}/${PLEX_FILE}
 
