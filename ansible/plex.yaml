@@ -8,6 +8,7 @@
     - name: Pull plex image
       docker_image:
         name: "{{ image_name }}"
+        source: pull
         rm: true
 
     - name: Start plex container
